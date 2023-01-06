@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+        <body>
+            <nav id="navbar">
+                <header>JS-Dokumentation</header>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#Introduction">Einführung</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#What_you_should_already_know">Was Sie bereits wissen sollten</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#JavaScript_and_Java">JavaScript und Java</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Hello_world">Hallo Welt</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Variables">Variablen</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Declaring_variables">Variablen deklarieren</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Variable_scope">Variabler Geltungsbereich</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Global_variables">Globale Variablen</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Constants">Konstanten</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Data_types">Datentypen</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#if...else_statement">if...else Aussage</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#while_statement">while-Anweisung</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Function_declarations">Funktionsdeklarationen</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Reference">Referenz</a>
+                    </li>
+                </ul>
+            </nav>
+            <main id="main-doc">
+                <section class="main-section" id="Einführung">
+                    <header>Einführung</header>
+                    <article>
+                        <p>
+                         JavaScript ist eine Plattformübergreifende, objektorentierte Skriptsprach.
+                         Es ist eine kleine und leichte Sprache.
+                         Innerhalb einer Host-Umgebung (z.B eines Webbrowsers) kann JavaScript mit den Objekten seiner Umgebung 
+                         verbunden werden, um eine programmatische Kontrolle über sie zu ermöglichen.   
+                        </p>
+                        <p>
+                            JavaScript enthält eine Standardbibilothek von Objekten wie Array, Date und Math sowie
+                            einen Kernsatz von Sprachelementen wie Operatoren, Kontrollstrukturen und Anweisungen. 
+                            JavaScript kann für eine vielzahl von Zwecken erweitert werden, indem es durch zusätzliche
+                            Objekte ergänzt wird; zum Beispiel:
+                        </p>
+                        <ul>
+                            <li>
+                                Clientseitiges JavaScript erweitert die Kernsprache, indem Objekte zur Steuerung 
+                                eines Browsers und seines Document Object Model (DOM) bereitgestellt werden. 
+                                Clientseitige Erweiterungen ermöglichen es einer Anwendung beispielsweise, Elemente 
+                                in einem HTML-Formular zu platzieren und auf Benutzerereignisse wie Mausklicks, 
+                                Formulareingaben und Seitennavigation zu reagieren
+                            </li>
+                            <li>
+                                Serverseitiges JavaScript erweitert die Kernsprache, indem es Objekte bereitstellt, 
+                                die für die Ausführung von JavaScript auf einem Server relevant sind. 
+                                Serverseitige Erweiterungen ermöglichen es einer Anwendung beispielsweise, 
+                                mit einer Datenbank zu kommunizieren, Kontinuität der Informationen von einem 
+                                Aufruf zu einem anderen der Anwendung bereitzustellen oder Dateimanipulationen auf 
+                                einem Server durchzuführen.
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="Was_sie_bereits_wissen_sollten">
+                    <header>Was sie bereits wissen sollten</header>
+                    <article>
+                        <p>
+                            Dieser Leitfaden setzt voraus, das Sie den folgenden grundlegenden
+                            Hintergrund haben:
+                        </p>
+                        <ul>
+                            <li>
+                                Ein allgemeines Verständnis des Internets und des World Wide Web (www.)
+                            </li>
+                            <li>
+                                Gute Kenntnisse der HyperText Markup Language (HTML).
+                            </li>
+                            <li>
+                                Etwas Programmiererfahrung. Wenn Sie neu in der Programmierung sind, 
+                                versuchen Sie eines der Tutorials, die auf der Hauptseite über JavaScript 
+                                verlinkt sind.
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="JavaScript_und_Java">
+                    <header>JavaScript und Java</header>
+                    <article>
+                      <p>JavaScript und Java sind in gewisser Weise ähnlich, aber in einigen anderen grundlegend unterschiedlich. Die JavaScript-Sprache ähnelt Java, hat aber keine statische Typisierung und starke Typprüfung von Java. JavaScript folgt den meisten Java-Ausdrucksyntaxen, Namenskonventionen und grundlegenden Kontrollflusskonstrukten, weshalb es von LiveScript in JavaScript umbenannt wurde.</p>
+            
+                      <p>Im Gegensatz zu Javas Kompilierzeitsystem von Klassen, die durch Deklarationen erstellt wurden, unterstützt JavaScript ein Laufzeitsystem, das auf einer kleinen Anzahl von Datentypen basiert, die numerische, boolesche und Zeichenfolgenwerte darstellen. JavaScript hat ein prototypbasiertes Objektmodell anstelle des allgemeineren klassenbasierten Objektmodells. Das prototypbasierte Modell bietet eine dynamische Vererbung; das heißt, was vererbt wird, kann für einzelne Objekte variieren. JavaScript unterstützt auch Funktionen ohne besondere deklarative Anforderungen. Funktionen können Eigenschaften von Objekten sein, die als lose typisierte Methoden ausgeführt werden.</p>
+                      <p>JavaScript ist eine sehr Freiformsprache im Vergleich zu Java. Sie müssen nicht alle Variablen, Klassen und Methoden deklarieren. Sie müssen sich nicht darum kümmern, ob Methoden öffentlich, privat oder geschützt sind, und Sie müssen keine Schnittstellen implementieren. Variablen, Parameter und Funktionsrückgabetypen werden nicht explizit eingegeben.</p>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Hello_world">
+                    <header>Hallo Welt</header>
+                    <article>Um mit dem Schreiben von JavaScript zu beginnen, öffnen Sie das Scratchpad und schreiben Sie Ihren ersten "Hallo Welt" JavaScript-Code:<code>function greetMe(yourName) { alert("Hello " + yourName); }
+                        greetMe("World");
+                      </code>Wählen Sie den Code im Pad aus und drücken Sie Strg+R, um zu sehen, wie er sich in Ihrem Browser entfaltet!</article>
+                  </section>
+                  <section class="main-section" id="Variables">
+                    <header>Variablen</header>
+                    <p>Sie verwenden Variablen als symbolische Namen für Werte in Ihrer Anwendung. Die Namen von Variablen, die als Bezeichner bezeichnet werden, entsprechen bestimmten Regeln.</p>
+                    <p>Eine JavaScript-Bezeichnerin muss mit einem Buchstaben, Unterstrich (_) oder Dollarzeichen ($) beginnen; nachfolgende Zeichen können auch Ziffern (0-9) sein. Da JavaScript zwischen Groß- und Kleinschreibung unterscheidet, enthalten Buchstaben die Zeichen "A" bis "Z" (Großbuchstaben) und die Zeichen "a" bis "z" (Kleinbuchstaben).</p>
+                    <p>Sie können ISO 8859-1 oder Unicode-Buchstaben wie å und ü in Bezeichnern verwenden. Sie können die Unicode-Escape-Sequenzen auch als Zeichen in Bezeichnern verwenden. Einige Beispiele für legale Namen sind Number_hits, temp99 und _name.</p>
+                  </section>
+                  <section class="main-section" id="Declaring_variables">
+                    <header>Variablen deklarieren</header>
+                    <article>Sie können eine Variable auf drei Arten deklarieren:<p>Mit dem Schlüsselwort var. Zum Beispiel,<code>var x = 42.</code>Diese Syntax kann verwendet werden, um sowohl lokale als auch globale Variablen zu deklarieren.</p>
+                      <p>Indem man ihm einfach einen Wert zuweist. Zum Beispiel,<code>x = 42.</code>Dies deklariert immer eine globale Variable. Es erzeugt eine strenge JavaScript-Warnung. Sie sollten diese Variante nicht verwenden.</p>
+                      <p>Mit dem Schlüsselwort let. Zum Beispiel,<code> let y = 13.</code>Diese Syntax kann verwendet werden, um eine lokale Blockbereichsvariable zu deklarieren. Siehe Variablenbereich unten.</p>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Variable_scope">
+                    <header>Variabler Geltungsbereich</header>
+                    <article>
+                      <p>Wenn Sie eine Variable außerhalb einer Funktion deklarieren, wird sie als globale Variable bezeichnet, da sie für jeden anderen Code im aktuellen Dokument verfügbar ist. Wenn Sie eine Variable innerhalb einer Funktion deklarieren, wird sie als lokale Variable bezeichnet, da sie nur innerhalb dieser Funktion verfügbar ist.</p>
+            
+                      <p>JavaScript vor ECMAScript 2015 hat keinen Blockanweisungsbereich; vielmehr ist eine innerhalb eines Blocks deklarierte Variable lokal für die Funktion (oder den globalen Bereich), in der sich der Block befindet. Zum Beispiel protokolliert der folgende Code 5, da der Bereich von x die Funktion (oder der globale Kontext) ist, in der x deklariert ist, nicht der Block, der in diesem Fall eine if-Anweisung ist.</p>
+                      <code>if (true) { var x = 5; } console.log(x); // 5</code>
+                      <p>Dieses Verhalten ändert sich, wenn die in ECMAScript 2015 eingeführte let-Deklaration verwendet wird.</p>
+            
+                      <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+                        not defined</code>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Global_variables">
+                    <header>Globale Variablen</header>
+                    <article>
+                      <p>Globale Variablen sind in der Tat Eigenschaften des globalen Objekts. Auf Webseiten ist das globale Objekt window, so dass Sie globale Variablen mit der Syntax window.variable festlegen und darauf zugreifen können.</p>
+            
+                      <p>Folglich können Sie von einem anderen Fenster oder Rahmen aus auf globale Variablen zugreifen, die in einem Fenster oder Rahmen deklariert sind, indem Sie den Namen des Fensters oder Rahmens angeben. Wenn beispielsweise eine Variable namens phoneNumber in einem Dokument deklariert ist, können Sie diese Variable von einem iframe aus als parent.phoneNumber bezeichnen.</p>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Constants">
+                    <header>Konstanten</header>
+                    <article>
+                      <p>Sie können eine schreibgeschützte, benannte Konstante mit dem Schlüsselwort const erstellen. Die Syntax eines konstanten Bezeichners ist die gleiche wie für einen Variablenbezeichner: Er muss mit einem Buchstaben-, Unterstrich- oder Dollarzeichen beginnen und kann alphabetische, numerische oder Unterstriche enthalten.</p>
+            
+                      <code>const PI = 3.14;</code>
+                      <p>Eine Konstante kann den Wert nicht durch Zuweisung ändern oder erneut deklariert werden, während das Skript ausgeführt wird. Es muss auf einen Wert initialisiert werden.</p>
+            
+                      <p>Die Bereichsregeln für Konstanten sind die gleichen wie für let block scope variable. Wenn das Schlüsselwort const weggelassen wird, wird angenommen, dass der Bezeichner eine Variable darstellt.</p>
+            
+                      <p>Sie können keine Konstante mit demselben Namen wie eine Funktion oder Variable im selben Bereich deklarieren. Zum Beispiel:</p>
+            
+                      <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                        WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                        //statements }</code>Objektattribute sind jedoch nicht geschützt, so dass die folgende Anweisung ohne Probleme ausgeführt wird.<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                        "otherValue";</code>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Data_types">
+                    <header>Datentypen</header>
+                    <article>
+                      <p>Der neueste ECMAScript-Standard definiert sieben Datentypen:</p>
+                      <ul>
+                        <li>
+                          <p>Sechs Datentypen, die Primitive sind:</p>
+                          <ul>
+                            <li>Boolean. wahr und falsch.</li>
+                            <li>null. Ein spezielles Schlüsselwort, das einen Nullwert angibt. Da JavaScript zwischen Groß- und Kleinschreibung unterscheidet, ist Null nicht dasselbe wie Null, NULL oder eine andere Variante.</li>
+                            <li>undefiniert. Eine Eigenschaft der obersten Ebene, deren Wert nicht definiert ist.</li>
+                            <li>Nummer 42 oder 3.14159.</li>
+                            <li>Schnur. "Howdy"</li>
+                            <li>Symbol (neu in ECMAScript 2015). Ein Datentyp, dessen Instanzen eindeutig und unveränderlich sind.</li>
+                          </ul>
+                        </li>
+            
+                        <li>und Objekt</li>
+                      </ul>Obwohl diese Datentypen eine relativ kleine Menge sind, ermöglichen sie es Ihnen, nützliche Funktionen mit Ihren Anwendungen auszuführen. Objekte und Funktionen sind die anderen grundlegenden Elemente in der Sprache. Sie können sich Objekte als benannte Container für Werte vorstellen und Funktionen als Prozeduren, die Ihre Anwendung ausführen kann.</article>
+                  </section>
+                  <section class="main-section" id="if...else_statement">
+                    <header>if...else Aussage</header>
+                    <article>Verwenden Sie die if-Anweisung, um eine Anweisung auszuführen, wenn eine logische Bedingung wahr ist. Verwenden Sie die optionale else-Klausel, um eine Anweisung auszuführen, wenn die Bedingung falsch ist. Eine if-Anweisung sieht wie folgt aus:<code>if (condition) { statement_1; } else { statement_2; }</code>Bedingung kann jeder Ausdruck sein, der als wahr oder falsch ausgewertet wird. Siehe Boolean für eine Erklärung dessen, was als wahr und falsch ausgewertet wird. Wenn die Bedingung als wahr ausgewertet wird, wird statement_1 ausgeführt; andernfalls wird statement_2 ausgeführt. statement_1 und statement_2 können jede beliebige Anweisung sein, einschließlich weiterer verschachtelter if-Anweisungen.<p>Sie können die Anweisungen auch mit else zusammensetzen, wenn mehrere Bedingungen nacheinander getestet werden sollen, wie folgt:</p>
+                      <code>if (condition_1) { statement_1; } else if (condition_2) {
+                        statement_2; } else if (condition_n) { statement_n; } else {
+                        statement_last; }
+                      </code>Bei mehreren Bedingungen wird nur die erste logische Bedingung ausgeführt, die als wahr ausgewertet wird. Um mehrere Anweisungen auszuführen, gruppieren Sie sie innerhalb einer Blockanweisung ({ ... }) . Im Allgemeinen ist es eine gute Praxis, immer Blockanweisungen zu verwenden, insbesondere beim Verschachteln von if-Anweisungen:<code>if (condition) { statement_1_runs_if_condition_is_true;
+                        statement_2_runs_if_condition_is_true; } else {
+                        statement_3_runs_if_condition_is_false;
+                        statement_4_runs_if_condition_is_false; }</code>Es ist ratsam, keine einfachen Zuweisungen in einem bedingten Ausdruck zu verwenden, da die Zuweisung mit Gleichheit verwechselt werden kann, wenn man über den Code blickt. Verwenden Sie beispielsweise nicht den folgenden Code:<code>if (x = y) { /* statements here */ }</code>Wenn Sie eine Zuweisung in einem bedingten Ausdruck verwenden müssen, ist es gängige Praxis, zusätzliche Klammern um die Zuweisung zu legen. Zum Beispiel:<code>if ((x = y)) { /* statements here */ }</code>
+                    </article>
+                  </section>
+                  <section class="main-section" id="while_statement">
+                    <header>while-Anweisung</header>
+                    <article>Eine while-Anweisung führt ihre Anweisungen aus, solange eine bestimmte Bedingung als true ausgewertet wird. Eine while-Anweisung sieht wie folgt aus:<code>while (condition) statement</code>Wenn die Bedingung falsch wird, stoppt die Anweisung innerhalb der Schleife die Ausführung und die Kontrolle geht an die Anweisung nach der Schleife über.<p>Der Bedingungstest findet statt, bevor die Anweisung in der Schleife ausgeführt wird. Wenn die Bedingung true zurückgibt, wird die Anweisung ausgeführt und die Bedingung erneut getestet. Wenn die Bedingung false zurückgibt, stoppt die Ausführung und die Kontrolle wird an die folgende Anweisung übergeben.</p>
+            
+                      <p>Um mehrere Anweisungen auszuführen, verwenden Sie eine Blockanweisung ({ ... }), um diese Anweisungen zu gruppieren.</p>Beispiel:<p>Die folgende while-Schleife iteriert, solange n kleiner als drei ist:</p>
+            
+                      <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+                      <p>Mit jeder Iteration erhöht die Schleife n und addiert diesen Wert zu x. Daher übernehmen x und n die folgenden Werte:</p>
+            
+                      <ul>
+                        <li>Nach dem ersten Durchgang: n = 1 und x = 1</li>
+                        <li>Nach dem zweiten Durchgang: n = 2 und x = 3</li>
+                        <li>Nach dem dritten Durchgang: n = 3 und x = 6</li>
+                      </ul>
+                      <p>Nach Abschluss des dritten Durchgangs ist die Bedingung n &lt; 3 nicht mehr wahr, so dass die Schleife beendet wird.</p>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Function_declarations">
+                    <header>Funktionsdeklarationen</header>
+                    <article>Eine Funktionsdefinition (auch Funktionsdeklaration oder Funktionsanweisung genannt) besteht aus dem Funktionsschlüsselwort, gefolgt von:<ul>
+                        <li>Der Name der Funktion.</li>
+                        <li>Eine Liste von Argumenten für die Funktion, die in Klammern eingeschlossen und durch Kommas getrennt sind.</li>
+                        <li>Die JavaScript-Anweisungen, die die Funktion definieren, eingeschlossen in geschweifte Klammern, { }.</li>
+                      </ul>
+                      <p>Der folgende Code definiert beispielsweise eine einfache Funktion namens square:</p>
+            
+                      <code>function square(number) { return number * number; }</code>
+                      <p>Das Funktionsquadrat nimmt ein Argument an, das als Zahl bezeichnet wird. Die Funktion besteht aus einer Anweisung, die besagt, dass das Argument der Funktion (d.h. die Zahl) multipliziert mit sich selbst zurückgegeben werden soll. Die return-Anweisung gibt den von der Funktion zurückgegebenen Wert an.</p>
+                      <code>return number * number;</code>
+                      <p>Primitive Parameter (wie eine Zahl) werden durch einen Wert an Funktionen übergeben; der Wert wird an die Funktion übergeben, aber wenn die Funktion den Wert des Parameters ändert, spiegelt sich diese Änderung nicht global oder in der aufrufenden Funktion wider.</p>
+                    </article>
+                  </section>
+                  <section class="main-section" id="Reference">
+                    <header>Referenz</header>
+                    <article>
+                      <ul>
+                        <li>Die gesamte Dokumentation auf dieser Seite stammt aus <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+                        </li>
+                      </ul>
+                    </article>
+                  </section>
+            </main>
+        </body>
+    </head>
+</html>
