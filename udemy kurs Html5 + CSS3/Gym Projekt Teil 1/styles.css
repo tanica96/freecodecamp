@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Monsarrat', sans-serif;
+    min-height: 100%;
+
+    margin: 0%;
+    padding: 0%;
+
+    background-color: rgb(100, 100, 100);
+
+    background-image:
+        linear-gradient(90deg, rgb(226, 29, 60) 40%, rgba(0, 0, 0, 0.5) 40%, transparent 45%),
+        url("waves-cropped.svg"),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url("pexels-cesar-galeao-3289711-gray.jpg");
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-size:
+        100% 100%,
+        40% auto,
+        100% 100%,
+        60% auto;
+
+    background-position:
+        50% 50%,
+        100% 100%,
+        50% 50%,
+        100% 25%;
+}
+
+.page {
+    display: flex;
+}
+
+.main-content {
+    width: 40%;
+}
+
+.countdown {
+    width: 60%;
+}
+
+.logo {
+    width: 275px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.main-offer {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 65px;
+    margin-right: 15px;
+    align-self: center;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-heading {
+    letter-spacing: 0.05em;
+    margin: 0;
+    font-style: italic;
+
+    font-size: 26px;
+    font-weight: normal;
+    color: white;
+}
+
+.main-heading>strong {
+    text-transform: uppercase;
+}
+
+.main-offer-price {
+    display: block;
+    font-size: 120px;
+    margin-top: 18px;
+}
+
+.join-today {
+    display: inline-block;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 99999px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-top: 40px;
+}
+
+.join-today:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.footer-paragraph {
+    margin-top: 75px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 15px;
+}
+
+.contdown-heading {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.countdown-paragraph {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
