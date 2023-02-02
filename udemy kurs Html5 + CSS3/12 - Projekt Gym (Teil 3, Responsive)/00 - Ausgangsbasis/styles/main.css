@@ -4,67 +4,48 @@
 
 html {
     min-height: 100%;
-    font-size: 0.625em;
-}
-
-@media (min-width: 100em) {
-    font-size: 0.75em;
-}
-
-@media (min-width: 120em) {
-    font-size: 0.9em;
-}
-
-@media (min-width: 140em) {
-    font-size: 1.05em;
 }
 
 body {
-    font-family: 'Monsarrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100%;
-    font-size: 1.6rem;
-    margin: 0%;
-    padding: 0%;
-
+    margin: 0;
+    padding: 0;
     background-color: rgb(100, 100, 100);
 
-    background-image:
-        linear-gradient(101.31deg, rgb(226, 29, 60) 50%, rgba(0, 0, 0, 0.5) 50%, transparent 55%),
-        url("waves-cropped.svg"),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-        url("pexels-cesar-galeao-3289711-gray.jpg");
+    /* Breite: 150px, Höhe 650px */
+    /* Verhältnis Breite:Höhe ist 1:5 */
+    /* In degree: 11.31deg */
 
-    background-attachment:
+    background-image: 
+        linear-gradient(101.31deg, rgb(226,29,60) 50%, rgba(0, 0, 0, 0.5) 50%, transparent 55%),
+        url("../images/waves-cropped.svg"),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url("../images/pexels-cesar-galeao-3289711-gray.jpg");
+
+    background-attachment: 
         fixed,
-        fixed,
-        fixed,
+        fixed, 
+        fixed, 
         fixed;
 
-    background-repeat:
+    background-repeat: 
         no-repeat,
         no-repeat,
         no-repeat,
         no-repeat;
 
-    background-size:
+    background-size: 
         100% 100%,
         40% auto,
         100% 100%,
         calc(50% + 20vh) auto;
 
-    background-position:
+    background-position: 
         -10vh 50%,
         100% 100%,
         50% 50%,
         100% 25%;
-
-}
-
-@media (max-width: 62.5em) {
-    body {
-        background-color: rgb(226, 29, 60);
-        background-image: none;
-    }
 }
 
 .page {
@@ -72,12 +53,9 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 62.5em) {
-    flex-direction: column;
-}
-
 .main-content {
     flex: 0 0 40%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,57 +63,52 @@ body {
 
 .countdown {
     flex: 0 1 60%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logo {
-    width: 27.5rem;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    width: 275px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .main-offer {
-    margin: 10rem 1.5rem 10rem 1.5rem;
+    margin: 100px 15px 100px 15px;
     align-self: center;
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 .main-heading {
-    letter-spacing: 0.05em;
     margin: 0;
+    letter-spacing: 0.05em;
     font-style: italic;
-
-    font-size: 2.6rem;
+    font-size: 28px;
     font-weight: normal;
     color: white;
 }
 
-.main-heading>strong {
+.main-heading > strong {
     text-transform: uppercase;
 }
 
 .main-offer-price {
     display: block;
-    font-size: 12rem;
-    margin-top: 1.8rem;
+    font-size: 120px;
+    margin-top: 18px;
 }
 
 .join-today {
     display: inline-block;
-    font-size: 2.4rem;
+    font-size: 24px;
     background-color: black;
     color: white;
-    border-radius: 99999rem;
+    border-radius: 99999px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 4rem;
-    margin-top: 4rem;
+    padding: 10px 50px;
+    margin-top: 40px;
 }
 
 .join-today:hover {
@@ -143,18 +116,17 @@ body {
 }
 
 .footer-paragraph {
-    margin: 1.5rem 0 1.5rem 1.5rem;
+    margin: 15px 0 15px 15px;
     color: black;
-    margin-left: 1.5rem;
 }
 
 .countdown-heading {
-    margin: 0 0 0 0;
+    margin: 0;
     color: white;
     text-align: center;
     letter-spacing: 0.05em;
     font-weight: normal;
-    font-size: 2.8rem;
+    font-size: 28px;
     text-transform: uppercase;
 }
 
@@ -163,5 +135,5 @@ body {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 5.8rem;
+    font-size: 58px;
 }
