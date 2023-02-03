@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    padding: 2rem 4rem;
+    background-image: url("header-background-0.5x.jpg");
+
+}
+
+@media (min-width: 900px) {
+    .header {
+        background-image: url("header-background.jpg");
+    }
+}
