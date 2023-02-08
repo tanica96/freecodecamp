@@ -18,7 +18,7 @@
 @media (min-width: 87.5em) {}
 
 html {
-    font-size: 1em; 
+    font-size: 1em;
 }
 
 body {
@@ -34,6 +34,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 @media (min-width: 62em) {
     .container {
         padding-left: 2rem;
@@ -50,6 +51,7 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
 .button:hover {
     text-decoration: underline;
     background-color: #c95f47;
@@ -59,6 +61,7 @@ body {
     background-color: transparent;
     border: 0.125rem solid white;
 }
+
 .button--transparent:hover {
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -67,12 +70,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/header/header-background-0.5x.jpg");
+    background-image: url("./header-background-0.5x.jpg");
 }
 
 @media (min-width: 62em) {
     .header {
-        background-image: url("../images/header/header-background.jpg");
+        background-image: url("./header-background.jpg");
     }
 }
 
@@ -91,7 +94,7 @@ body {
 }
 
 .header__logo {
-    width: 100%;   
+    width: 100%;
 }
 
 .header__nav-ul {
@@ -104,9 +107,11 @@ body {
     display: inline-block;
     list-style-type: none;
 }
+
 .header__nav-li--desktop-only {
     display: none;
 }
+
 @media (min-width: 62em) {
     .header__nav-li--desktop-only {
         display: inline-block;
@@ -139,6 +144,7 @@ body {
     color: white;
     margin: 0;
 }
+
 @media (min-width: 36em) {
     .header__heading {
         font-size: 3rem;

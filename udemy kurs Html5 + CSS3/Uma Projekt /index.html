@@ -7,14 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./lib/montserrat/webfonts/Montserrat.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./main.css">
 
     <title>UMA</title>
 </head>
 
 <body>
     <header class="header">
-        <img src="logo.svg" alt="Logo of UMA" class="header__logo">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo-link">
+                    <img src="logo-cropper.svg" alt="Logo of UMA" class="header__logo">
+                </a>
+                <ul class="header__nav-ul">
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link">Testimonial</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="Tel:+49123456789" class="header__nav-link">+49 1234 56789</a>
+                    </li>
+                    <li class="header__nav-li header__nav-li--desktop-only">
+                        <a href="#" class="button button--transparent">Book now</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1 class="header__heading">Unforgettable<br> Memories<br> Await</h1>
+            <p class="header__sub-heading">Go places. Collect stories.</p>
+            <div class="header__button-container">
+                <a href="#" class="button button--transparent">Book now</a>
+            </div>
+        </div>
     </header>
 </body>
 
