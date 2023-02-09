@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/montserrat/webfonts/Montserrat.css">
+
+    <style>
+        body { font-family: "Montserrat", sans-serif; }
+        * { box-sizing: border-box; }
+
+        .box {
+            width: 200px;
+            height: 400px;
+            background-image: linear-gradient(45deg, orange, red);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .box h1 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .box img {
+            width: 100%;
+            border-bottom-right-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="pexels-anna-nekrashevich-7215166.jpg" alt="Pexels Bild">
+        <h1>Ich bin eine Überschrift</h1>
+    </div>
+</body>
+</html>
