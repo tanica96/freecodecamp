@@ -69,12 +69,22 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
+.text-primary {
+    color: #ED6A4E;
+}
+
 .header {
     padding-bottom: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 75%;
     background-image: url("./header-background-0.5x.jpg");
+}
+
+@media (min-width: 62em) {
+    .header {
+        background-image: url("./header-background.jpg");
+    }
 }
 
 .header::after {
@@ -94,12 +104,6 @@ body {
     }
 }
 
-@media (min-width: 62em) {
-    .header {
-        background-image: url("./header-background.jpg");
-    }
-}
-
 .header__logo-link {
     display: block;
     width: 9rem;
@@ -116,7 +120,7 @@ body {
 
 .header__logo {
     width: 100%;
-    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5))
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
 }
 
 .header__nav-ul {
@@ -212,4 +216,82 @@ body {
     .header__button-container {
         display: none;
     }
+}
+
+.heading {
+    color: #014153;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2rem 0;
+}
+
+.heading--centered {
+    text-align: center;
+}
+
+.heading__pre-text {
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+.adventures {
+    padding-bottom: 4rem;
+    background-color: rgb(225, 220, 206);
+
+    /*
+    background-image: url("../images/adventures/background.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    */
+}
+
+.adventures__card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+}
+
+.adventures__card {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 22.333333rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.adventures__card-img {
+    display: block;
+    width: 100%;
+}
+
+.adventures__card-heading {
+    margin: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #014152;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.adventures__card-date {
+    color: #014152;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    margin: 0;
 }
