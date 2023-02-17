@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/montserrat/webfonts/Montserrat.css">
+    <title>Document</title>
+
+    <style>
+         * { box-sizing: border-box; }
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: rgb(200, 200, 200);
+        }
+
+        img {
+            width: 30rem;
+            height: 10rem;
+            object-fit: cover;
+            object-position: center 40%;
+        }
+        .bg-img {
+            width: 30rem;
+            height: 10rem;
+            background-image: url("pexels-timi-keszthelyi-2350351.jpg");
+            background-repeat: no-repeat;
+            background-position: center 40%;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit -->
+    <!-- https://caniuse.com/?search=object-fit -->
+
+    <img src="pexels-timi-keszthelyi-2350351.jpg" alt="Bild von Budapest">
+
+    <div class="bg-img"></div>
+    
+</body>
+</html>
