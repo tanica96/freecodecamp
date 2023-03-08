@@ -371,3 +371,29 @@ body {
     line-height: 1.4em;
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
+
+.parts__paragraph {
+    margin: 0;
+    font-size: 1rem;
+    color: #014153;
+    padding-bottom: 1.5rem;
+    line-height: 1.4em;
+    max-width: 35rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parts {
+    padding-bottom: 1.8rem;
+}
+
+.parts::after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 7.5rem;
+    background-color: #ED6A4E;
+    margin-left: auto;
+    margin-right: auto;
+}
