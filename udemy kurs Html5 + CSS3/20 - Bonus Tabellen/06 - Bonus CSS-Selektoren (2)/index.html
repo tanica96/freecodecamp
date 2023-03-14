@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lib/montserrat/webfonts/Montserrat.css">
+    <title>Document</title>
+    <style type="text/css">
+        * { box-sizing: border-box; }
+        body {
+            font-family: "Montserrat";
+            font-size: 1em;
+        }
+
+        .person-list {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .person-list td,
+        .person-list th {
+            border: 1px solid gray;
+            padding: 5px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .person-list thead td, 
+        .person-list thead th {
+            background-color: rgb(222, 222, 222);
+            border-bottom: 3px solid gray;
+        }
+
+        .person-list .first-column {
+            background-color: rgb(222, 222, 222);
+            border-right: 3px solid gray;
+        }
+
+        ul li:nth-child(3n + 1) {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Überschrift...</h1>
+    <ul>
+        <li class="a">Listenelement 1</li>
+        <li class="a">Listenelement 2</li>
+        <li class="a">Listenelement 3</li>
+        <li class="a">Listenelement 4</li>
+        <li class="a">Listenelement 5</li>
+        <li>Listenelement 6</li>
+        <li>Listenelement 7</li>
+        <li>Listenelement 8</li>
+    </ul>
+    <ul>
+        <li>Listenelement 1</li>
+        <li>Listenelement 2</li>
+        <li>Listenelement 3</li>
+        <li>Listenelement 4</li>
+        <li>Listenelement 5</li>
+        <li>Listenelement 6</li>
+    </ul>
+    <table class="person-list">
+        <thead>
+            <tr>
+                <td style="width: 100px"></td>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>E-Mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="first-column">Person #1</th>
+                <td>Max</td>
+                <td>Mustermann</td>
+                <td>max.mustermann@example.com</td>
+            </tr>
+            <tr>
+                <th class="first-column">Person #2</th>
+                <td>Monika</td>
+                <td>Mustermann</td>
+                <td>monka.mustermann@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
