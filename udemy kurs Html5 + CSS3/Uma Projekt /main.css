@@ -242,7 +242,7 @@ body {
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.header--top-box::before {
+.heading--top-box::before {
     content: "";
     display: block;
     height: 0.25rem;
@@ -250,6 +250,19 @@ body {
     background-color: #ED6A4E;
     margin-bottom: 2rem;
 
+}
+
+.heading--bottom-box::after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 7.5rem;
+    background-color: #ED6A4E;
+    margin-top: 2rem;
+}
+
+.heading--small {
+    font-size: 1.5rem;
 }
 
 .adventures {
@@ -451,30 +464,122 @@ body {
 }
 
 .guide {
-    height: 20rem;
-
+    padding-top: 0rem;
+    padding-bottom: 3rem;
     background-image:
-        linear-gradient(90deg, rgba(36, 161, 163, 0.25), rgba(36, 161, 163, 0.25)),
-        url("./pexels-arnie-chou-927414.jpg"),
         linear-gradient(90deg, #014153, #014153),
-        url("./pexels-minmin-kp-2554603.jpg");
+        url("./pexels-kevin-menajang-982673.jpg"),
+        url("./pexels-aron-visuals-1694621.jpg");
     background-size:
-        60% 100%,
-        60% auto,
-        60% 100%,
-        40% auto;
+        100% calc(100% - 10rem),
+        100% calc(100% - 10rem),
+        100% auto;
+    background-position:
+        50% 100%,
+        50% 100%,
+        50% calc(5rem - 60vw);
     background-repeat:
         no-repeat,
         no-repeat,
-        no-repeat,
         no-repeat;
-    background-position:
-        100% 50%,
-        100% 50%,
-        100% 50%,
-        0% 50%;
+
     background-blend-mode:
-        normal,
-        saturation,
+        multiply,
         normal;
+}
+
+@media (min-width: 62em) {
+    .guide {
+        background-size:
+            calc(50% + 10rem) 100%,
+            calc(50% + 10rem) 100%,
+            calc(50% - 10rem) auto;
+        background-position:
+            100% 50%,
+            100% 50%,
+            0% 20%;
+    }
+}
+
+@media (min-width: 62em) {
+    .guide__container {
+        padding-top: 1rem;
+        padding-left: calc(50% - 7rem);
+    }
+}
+
+.guide__paragraph {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1.5rem;
+    line-height: 1.4em;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+    background-color: rgb(225, 220, 206);
+    padding-bottom: 3rem;
+}
+
+
+.skills__card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+}
+
+.skills__card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex: 0 0 22.333333rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.skills__card-icon-container {
+    display: inline-block;
+    background-color: #ED6A4E;
+    color: #014153;
+    border-radius: 999999px;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.skills__card-icon {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+.skills__card-list {
+    margin: 0;
+    padding: 0;
+    color: #014153;
+    list-style-position: none;
+}
+
+.skills__card-list-item {
+    padding-bottom: 1rem;
+}
+
+.skills__card-list-item::before {
+    content: "";
+    display: inline-block;
+
+    background-color: currentColor;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 9999999px;
+
+    position: relative;
+    top: -0.15em;
+    margin-right: 0.5em;
 }
