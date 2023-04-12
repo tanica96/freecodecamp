@@ -583,3 +583,41 @@ body {
     top: -0.15em;
     margin-right: 0.5em;
 }
+
+.quote {
+    background-color: #014153;
+    color: #ED6A4E;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.quote__figure {
+    margin: 0;
+
+
+}
+
+.quote__blockquote {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quote__figcaption {
+    font-size: 1.5rem;
+}
+
+.quote__paragraph {
+    margin: 0;
+}
+
+.quote__paragraph::before {
+    content: "„";
+}
+
+.quote__paragraph::after {
+    content: "“";
+}
