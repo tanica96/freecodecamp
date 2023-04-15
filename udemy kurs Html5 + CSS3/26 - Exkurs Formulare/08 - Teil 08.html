@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/montserrat/webfonts/Montserrat.css">
+    <title>Document</title>
+
+    <style>
+        * { box-sizing: border-box; }
+        html { font-family: "Montserrat", sans-serif; font-size: 1em; }
+        body { background-color: rgb(200, 200, 200); }
+
+        label { font-weight: bold; display: block; }
+        input { 
+            font-family: inherit;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"],
+        input[type="password"] {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: white;
+            padding: 0.25rem 0.5rem;
+            margin: 0.25rem;
+            border: 0.1rem solid gray;
+            border-radius: 0.125rem;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border: 0.1rem solid blue;
+        }
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: purple;
+        }
+        input[type="submit"] {
+            background-color: white;
+            padding: 0.25rem 0.5rem;
+            margin: 0.25rem;
+            border: 0.1rem solid gray;
+            border-radius: 0.125rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="https://downloads.codingcoursestv.eu/051%20-%20html%20und%20css/post.php" method="POST">
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" id="email" placeholder="E-Mail:" value="">
+
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Bitte Passwort eingeben" value="">
+
+        <br>
+        <select name="country[]" multiple size="10">
+            <optgroup label="Europa">
+                <option value="germany" selected>Deutschland</option>
+                <option value="austria" selected>Österreich</option>
+                <option value="switzerland" selected>Schweiz</option>
+            </optgroup>
+            <optgroup label="Nordamerika">
+                <option value="canada">Kanada</option>
+                <option value="us">USA</option>
+                <option value="mexiko">Mexiko</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="abschicken">Abschicken:</label>
+        <input type="submit" id="abschicken" value="Abschicken!">
+    </form>
+</body>
+</html>

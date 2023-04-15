@@ -73,6 +73,17 @@ body {
     color: #ED6A4E;
 }
 
+.desktop-only {
+    display: none;
+
+}
+
+@media (min-width: 62em) {
+    .desktop-only {
+        display: initial;
+    }
+}
+
 .header {
     padding-bottom: 2rem;
     background-repeat: no-repeat;
@@ -587,8 +598,8 @@ body {
 .quote {
     background-color: #014153;
     color: #ED6A4E;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .quote__figure {
@@ -604,10 +615,14 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.075em;
 }
 
 .quote__figcaption {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.075em;
 }
 
 .quote__paragraph {
@@ -615,9 +630,9 @@ body {
 }
 
 .quote__paragraph::before {
-    content: "„";
+    content: "“";
 }
 
 .quote__paragraph::after {
-    content: "“";
+    content: "„";
 }
