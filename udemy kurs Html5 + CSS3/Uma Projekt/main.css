@@ -27,6 +27,11 @@ body {
     padding: 0;
 }
 
+::selection {
+    color: #014153;
+    background-color: #ED6A4E;
+}
+
 .container {
     max-width: 75rem;
     margin-left: auto;
@@ -52,6 +57,7 @@ body {
     border: none;
     background-color: #ED6A4E;
     font-weight: bold;
+    font-size: 1rem;
     text-decoration: none;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
@@ -690,6 +696,11 @@ textarea.form__input {
 
 }
 
+.contact ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
 @media (min-width: 62em) {
     .contact::after {
         content: "";
@@ -797,4 +808,30 @@ textarea.form__input {
     .contact__form-submit-container {
         text-align: right;
     }
+}
+
+.footer {
+    background-color: #ED6A4E;
+    padding-bottom: 3rem;
+}
+
+.footer::selection,
+.footer ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    color: #014153;
+}
+
+.footer__link {
+    color: #014153;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }

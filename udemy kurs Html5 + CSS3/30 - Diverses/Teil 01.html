@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .row {
+            width: 800px;
+            background-color: gray;
+        }
+        .col-sidebar {
+            float: left;
+            width: 300px;
+        }
+        .col-content {
+            float: left;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row clearfix">
+        <div class="col-sidebar">
+            <h1>Ich bin die Sidebar...</h1>
+            <h1>Ich bin die Sidebar...</h1>
+            <h1>Ich bin die Sidebar...</h1>
+        </div>
+        <div class="col-content">
+            <h1>Ich bin der Seiteninhalt</h1>
+        </div>
+    </div>
+    <h1>Außerhalb der row</h1>
+</body>
+</html>
