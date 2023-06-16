@@ -10,13 +10,13 @@
 let dayOfMonth = (new Date()).getDate()
 
 // Der Name aktuellen Monats
-let monthName = (new Date()).toLocaleString(["de", "en"], {month: "long"})
+let monthName = (new Date()).toLocaleString(["de", "en"], { month: "long" })
 
 // Das aktuelle Jahr (Schreibweise 1)
 let year1 = (new Date()).getFullYear()
 
 // Das aktuelle Jahr (Schreibweise 2)
-let year2 = (new Date()).toLocaleString(["de", "en"], {year: "numeric"})
+let year2 = (new Date()).toLocaleString(["de", "en"], { year: "numeric" })
 
 ////////////////////////////////////////////////////////////////////////////
 // Aufgabe:
@@ -37,10 +37,21 @@ let year2 = (new Date()).toLocaleString(["de", "en"], {year: "numeric"})
 // Passe den Code hier drunter an!
 
 // Aufgabe 1
+console.log(dayOfMonth)
+console.log(typeof dayOfMonth)
+
+console.log(monthName)
+console.log(typeof monthName)
 
 // Aufgabe 2
+console.log("--------------")
+console.log(year1 + 5)
+console.log(year2 + 5)
+console.log(typeof year1)
+console.log(typeof year2)
 
 // Aufgabe 3
-
+console.log("----------")
+console.log(dayOfMonth + "." + monthName + " " + year1)
 
 
