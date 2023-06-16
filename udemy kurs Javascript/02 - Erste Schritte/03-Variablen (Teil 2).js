@@ -11,4 +11,4 @@ greeting = "Hallo JavaScript!"
 
 // Die Variable "greeting" wird 2x ausgegeben
 console.log(greeting)
-console.log(greeting)
+console.log(greeting) 

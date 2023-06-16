@@ -9,4 +9,4 @@ let greeting2 = "Hallo Welt!"
 
 // Die Variable "greeting2" wird 2x ausgegeben
 console.log(greeting2)
-console.log(greeting2)
+console.log(greeting2) 

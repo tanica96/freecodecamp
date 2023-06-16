@@ -16,4 +16,4 @@
 let greeting = "Hallo Welt!"
 
 // Die Variable "greeting" wird ausgegeben.
-console.log(greeting)
+console.log(greeting) 
