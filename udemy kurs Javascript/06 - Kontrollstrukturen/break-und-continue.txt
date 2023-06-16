@@ -1,0 +1,5 @@
+From: <hallowelt@example.com>
+To: <hallowelt@example.net>
+Subject: "Hier kommt der Betreff"
+
+Und hier kommt der eigentliche E-Mail-Inhalt
