@@ -12,8 +12,14 @@ let shopping = "    Apfel, Pfirsich, +++Avocado, Mango   "
 // Aufgabe 1: Entferne die Leerzeichen links und rechts, und
 // schreibe das Ergebnis zurück in die Variable "shopping"
 
+shopping = shopping.trim()
+console.log(shopping)
+
 // Aufgabe 2: Finde die Position der drei Plus-Zeichen, und
 // speichere diese in einer Variablen
+
+let pos = shopping.indexOf("+++")
+console.log(pos)
 
 // Aufgabe 3: Schneide die 3 Plus-Zeichen aus und gebe das 
 // Ergebnis mit einem console.log aus.
@@ -25,9 +31,13 @@ let shopping = "    Apfel, Pfirsich, +++Avocado, Mango   "
 // benötigen - einmal bis hin zu den +++-Zeichen, und einmal
 // für das Stück danach!
 
+console.log(shopping.substr(0, pos) + shopping.substr(pos + 3))
+console.log(shopping.slice(0, pos) + shopping.slice(pos + 3))
+
 // Aufgabe 4: Schneide die 3 Plus-Zeichen aus. Verwende dazu
 // die .replace()-Funktion!
 
+console.log(shopping.replace("+++", ""))
 
 // Aufgabe 5: Jetzt soll die Shopping-Liste ausgegeben werden.
 // Wandle die Liste in folgendes Schreibweise um. Platziere
@@ -53,3 +63,10 @@ let shopping = "    Apfel, Pfirsich, +++Avocado, Mango   "
 //
 // Du darfst wahlweise alles in einem console.log()-Aufruf ausgeben, 
 // oder auch mehrere console.log()-Aufrufe verwenden.
+
+shopping = shopping.replace("+++", "")
+
+console.log("-".repeat(20))
+console.log("Einkaufsliste")
+console.log(" - " + shopping.replace(", ", "\n - ").replace(", ", "\n - ").replace(", ", "\n - "))
+console.log("-".repeat(20))

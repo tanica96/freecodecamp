@@ -21,4 +21,4 @@ console.log(greeting.toLowerCase())
 console.log(greeting.replace("!", "!!!"))
 
 // Zeichen rechts und links vom String entfernen
-console.log(greeting.trim())
+console.log(greeting.trim()) 
