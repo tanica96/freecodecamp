@@ -36,6 +36,33 @@
 
 let amountStr = "15,37"
 
+let amount = parseFloat(amountStr.replace(",", ".")) * 100
+
+console.log(" - " + Math.floor(amount / 200) + "x 2€")
+amount = amount - Math.floor(amount / 200) * 200
+
+console.log(" - " + Math.floor(amount / 100) + "x 1€")
+amount = amount - Math.floor(amount / 100) * 100
+
+console.log(" - " + Math.floor(amount / 50) + "x 50 Cent")
+amount = amount - Math.floor(amount / 50) * 50
+
+console.log(" - " + Math.floor(amount / 20) + "x 20 Cent")
+amount = amount - Math.floor(amount / 20) * 20
+
+console.log(" - " + Math.floor(amount / 10) + "x 10 Cent")
+amount = amount - Math.floor(amount / 10) * 10
+
+console.log(" - " + Math.floor(amount / 5) + "x 5 Cent")
+amount = amount - Math.floor(amount / 5) * 5
+
+console.log(" - " + Math.floor(amount / 2) + "x 2 Cent")
+amount = amount - Math.floor(amount / 2) * 2
+
+console.log(" - " + Math.floor(amount / 1) + "x 1 Cent")
+amount = amount - Math.floor(amount / 1) * 1
+
+console.log(amount)
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -60,3 +87,15 @@ let amountStr = "15,37"
 //
 // Das Programm muss nicht perfekt sein. Es reicht, wenn es ungefähr 
 // funktioniert!
+
+
+let bill = 17.00
+
+console.log(bill * 1.1 / 4)
+console.log(Math.ceil(bill * 1.1 / 4) * 4)
+
+let bill2 = 10
+
+let billTotal = Math.ceil(bill2 * 1.1 / 2.5) * 2.5
+
+console.log("Der Gesamtbetrag beträgt $" + billTotal.toFixed(2) + ".")
