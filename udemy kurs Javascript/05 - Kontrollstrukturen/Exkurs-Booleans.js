@@ -16,10 +16,11 @@ console.log("b: ", b)
 let zahl1 = 5
 let zahl2 = 6
 
-console.log("zahl1 === zahl2:",  zahl1 === zahl2)
-console.log("zahl1 !== zahl2:",  zahl1 !== zahl2)
-console.log("zahl1 < zahl2:",  zahl1 < zahl2)
+console.log("zahl1 === zahl2:", zahl1 === zahl2)
+console.log("zahl1 !== zahl2:", zahl1 !== zahl2)
+console.log("zahl1 < zahl2:", zahl1 < zahl2)
 console.log("zahl1 <= zahl2:", zahl1 <= zahl2)
-console.log("zahl1 > zahl2:",  zahl1 > zahl2)
+console.log("zahl1 > zahl2:", zahl1 > zahl2)
 console.log("zahl1 >= zahl2:", zahl1 >= zahl2)
+
 
