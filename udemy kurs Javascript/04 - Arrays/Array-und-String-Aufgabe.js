@@ -17,6 +17,13 @@ let sentence = "\x49\x63\x68\x20\x6D\xF6\x63\x68\x74\x65\x20\x4A\x61\x76\x61\x53
 //    finde dann heraus, an welcher Stelle der Teilnehmer "Erika"
 //    im Array vorkommt, entferne diesen Teilnehmer aus dem Array,
 //    und setze die Teilnehmer wieder zurück zu einem String zusammen!
+
+let studentsArray = students.split(", ")
+let pos = studentsArray.indexOf("Erika")
+studentsArray.splice(pos, 1)
+
+students = studentsArray.join(", ")
+console.log(students)
 //
 // 2) Die Liste soll jetzt ausgedruckt werden. Zerlege dazu wieder
 //    die Liste in ein Array, und setze sie wieder zu einem String zusammen,
@@ -27,8 +34,13 @@ let sentence = "\x49\x63\x68\x20\x6D\xF6\x63\x68\x74\x65\x20\x4A\x61\x76\x61\x53
 //     - Anton
 //
 //    Tipp: Ein Zeilenumbruch ist ein ganz normales Zeichen - ein \n!
-// 
+
+console.log((" - ") + studentsArray.join("\n - "))
+//
 // 3) Zähle die Wörter in der Variable "sentence"! Versuche dabei,
 //    dir den Inhalt der Variable erst nach der Aufgabe anzuschauen!
 //    
 //    Tipp: Du kannst hierfür die .split()-Methode verwenden! Wie?
+
+console.log(sentence.split(" ").length)
+console.log(sentence)
