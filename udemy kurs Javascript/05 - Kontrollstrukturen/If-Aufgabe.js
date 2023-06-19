@@ -22,6 +22,13 @@ let students2 = ["Tobias", "Anna", "Michelle"]
 
 let student = "Torsten"
 
+if (students1.indexOf(student) !== -1 || students2.indexOf(student) !== -1) {
+    console.log(student + "ist eingeschrieben")
+}
+else {
+    console.log(student + "ist nicht eingeschrieben")
+}
+
 // Schreibe deinen Code hier
 
 
@@ -38,9 +45,16 @@ let student = "Torsten"
 
 let newStudent = "Tom"
 
+if (students1.length > students2.length) {
+    students2.push(newStudent)
+}
+else {
+    students1.push(newStudent)
+}
+
 // Schreibe deinen Code hier
 
- 
+
 // Aufgabe 3)
 //
 // Tobias muss seinen Sprachkurs absagen. Schreibe Code, der dafür sorgt,
@@ -55,7 +69,22 @@ let newStudent = "Tom"
 // weder in students1, noch in students2 eingeschrieben ist - dann soll
 // gar nichts passieren.
 
+let toRemove = "Tobias"
 
+if (students1.indexOf(toRemove) !== -1) {
+    let posToRemove = students1.indexOf(toRemove)
+
+    students1.splice(posToRemove, 1)
+}
+
+if (students2.indexOf(toRemove) !== -1) {
+    let posToRemove = students2.indexOf(toRemove)
+
+    students2.splice(posToRemove, 1)
+}
+
+console.log("students1", students1)
+console.log("studends2", students2)
 // Schreibe deinen Code hier
 
 
@@ -83,3 +112,13 @@ let newStudent = "Tom"
 // Tipp: Verwende hierzu ein if...else if-Konstrukt!
 //
 let numberOfStudents = 5
+
+if (numberOfStudents === 1) {
+    console.log("Der Sprachkurs kostet 40€ / Stunde / Teilnehmer.")
+}
+else if (numberOfStudents >= 2 && numberOfStudents <= 5) {
+    console.log("Der Sprachkurs kostet 25€ / Stunde / Teilnehmer.")
+}
+else if (numberOfStudents >= 6) {
+    console.log("Der Sprachkurs kostet 15€ / Stunde / Teilnehmer.")
+}
