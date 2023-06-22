@@ -1,9 +1,9 @@
 "use strict"
 
-const message = ["Hallo Welt!"]
+const message = ["Hallo Welt! "]
 console.log(message)
 
-debugger 
+debugger
 
 for (let i = 1; i <= 10; i++) {
   console.log("i:", i)
