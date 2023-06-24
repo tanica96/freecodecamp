@@ -30,7 +30,22 @@ const courses = [
 function getSmallestCourse() {
   // Ergänze den Code hier! Du darfst die Variable "courses"
   // von außerhalt hier drinnen weiterverwenden!
+
+  let smallestCourse = 0
+  let smallestIndex = -1
+
+  for (let i in courses) {
+    let course = courses[i]
+
+    if (smallestIndex === -1 || course.length < smallestCourse) {
+      smallestIndex = i
+      smallestCourse = course.length
+    }
+  }
+  return smallestIndex
 }
+
+console.log("getSmallestCourse()", getSmallestCourse())
 
 // 1b) Ergänze die Funktion, die einen Teilnehmer in den Kurs
 //     einfügt, der bisher am wenigsten Teilnehmer hat!
@@ -41,8 +56,11 @@ function addStudent(name) {
   // Teilnehmer hat!
   const smallestCourse = getSmallestCourse()
 
-  // Ergänze den Code hier!
+  courses[smallestCourse].push(name)
 }
+
+addStudent("XYZ")
+console.log(courses)
 
 
 // Aufgabe 2
@@ -99,8 +117,20 @@ const LANGUAGE_EN = [
 //     >> translateWord("Sprachkurs")
 //     >> // Rückgabewert: "language course"
 function translateWord(word) {
+  word = word.toLowerCase()
 
+  for (const i in LANGUAGE_DE) {
+    const currentWord = LANGUAGE_DE[i]
+
+    if (currentWord === word) {
+      return LANGUAGE_EN[i]
+    }
+  }
+
+  return word
 }
+
+console.log('translateWord("Sprachkurs")', translateWord("Sprachkurs"))
 
 // 2b) Schreibe eine Funktion, die den ersten Buchstaben eines
 //     Wortes in Großbuchstaben umwandeln kann.
@@ -121,9 +151,12 @@ function translateWord(word) {
 //     Das Ergebnis soll per "return" zurückgegeben werden
 
 function ucFirst(word) {
+  const firstLetter = word[0]
+  const rest = word.slice(1)
 
+  return firstLetter.toUpperCase() + rest
 }
-
+console.log('ucFirst("sprachkurs")', ucFirst("sprachkurs"))
 // 2c) Aufbauend den Funktionen aus 2a und 2b, entwickle eine weitere
 //     Funktion, die einen ganzen Satz übersetzen kann!
 //     
@@ -147,5 +180,19 @@ function ucFirst(word) {
 //      C++ oder Python entwickeln als in JavaScript.
 
 function translateSentence(sentence) {
+  const words = sentence.split(" ")
 
+  const translatedWords = []
+  for (const word of words) {
+    const translatedWord = translateWord(word)
+    translatedWords.push(translatedWord)
+  }
+
+  const translatedSentence = translatedWords.join(" ")
+  return ucFirst(translatedSentence)
 }
+
+console.log(
+  "tranlateSentence:",
+  translateSentence("Hallo und willkommen beim Sprachkurs")
+)
