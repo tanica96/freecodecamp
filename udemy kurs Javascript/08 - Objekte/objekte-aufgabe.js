@@ -51,6 +51,16 @@ const LANGUAGE_EN = [
 
 let DE_TO_EN = {}
 
+for (const i in LANGUAGE_DE) {
+  const wordDe = LANGUAGE_DE[i]
+  const wordEn = LANGUAGE_EN[i]
+
+  DE_TO_EN[wordDe] = wordEn
+}
+
+console.log("DE_TO_EN:", DE_TO_EN)
+
+
 // Schreibe deinen Code hier, der das Objekt "DE_TO_EN" befüllt!
 
 // Aufgabe 2
@@ -59,21 +69,34 @@ let DE_TO_EN = {}
 // geführt, das wiederum ein Objekt pro Teilnehmer enthält:
 // 
 const students = [
-  {firstname: "Max", lastname: "Mustermann", age: 21},
-  {firstname: "Laura", lastname: "Müller", age: 25},
-  {firstname: "Julia", lastname: "Schreiber", age: 30},
-  {firstname: "Tobias", lastname: "Lieb", age: 19}
+  { firstname: "Max", lastname: "Mustermann", age: 21 },
+  { firstname: "Laura", lastname: "Müller", age: 25 },
+  { firstname: "Julia", lastname: "Schreiber", age: 30 },
+  { firstname: "Tobias", lastname: "Lieb", age: 19 }
 ]
-// 2a) Die Sprachschule hat eine Marketing-Agentur engagiert, die 
+// 2a) Die Sprachschule hat eine Marketing-Agentur engagiert, die
 //     jetzt erstmal Marktforschung betreibt.
 // 
 //     Der Chef beauftragt uns / dich, das durchschnittliche Alter
 //     der Teilnehmer zu berechnen. Diese Berechnung soll natürlich
 //     mit Hilfe von JavaScript-Code durchgeführt werden!
-// 
+
+let ageSum = 0
+for (const student of students) {
+  ageSum += student.age
+}
+console.log("Durchschnittsalter:", ageSum / students.length)
+//
 // 2b) Füge einen neuen Teilnehmer mit dem Namen "Christian Schmidt"
 //     hinzu. Lasse bei diesem Teilnehmer die Eigenschaft "age" weg - 
 //     wir wissen das Alter noch nicht. 
+
+students.push({
+  firstname: "Christian",
+  lastname: "Schmidt"
+})
+console.log("students:", students)
+
 // 
 // 2c) Funktioniert der Code aus Teilaufgabe 2a) noch, auch wenn er
 //     auf der jetzt aktualisierten Teilnehmerliste ausgeführt wird?
@@ -87,4 +110,18 @@ const students = [
 //         sich diese Voraussetzungen, und der Code läuft nicht
 //         mehr korrekt durch!
 // 
+let ageSum2 = 0
+let studentsWithAge = 0
+for (const student of students) {
+  if (student.age) {
+    ageSum2 += student.age
+    studentsWithAge++
+  }
+}
+if (studentsWithAge === 0) {
+  console.log("Durchschnittsalter konnte nicht berechnet werden")
+}
+else {
+  console.log("Durchschnittsalter:", ageSum2 / studentsWithAge)
+}
 
