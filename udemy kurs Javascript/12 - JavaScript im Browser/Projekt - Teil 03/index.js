@@ -1,12 +1,13 @@
 "use strict"
 
 document.addEventListener("DOMContentLoaded", () => {
-  
+
 
 
   /*
   // Lösungsansatz (1)
 
+  
   const buttonIncrement = document.getElementById("button-increment")
   const buttonReset = document.getElementById("button-reset")
 
@@ -42,9 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttonIncrement = document.getElementById("button-increment")
   const buttonReset = document.getElementById("button-reset")
   const counterNumber = document.getElementById("counter-number")
-  
+
   let currentCounter = parseInt(counterNumber.innerText, 10)
-  
+
   buttonIncrement.addEventListener("click", () => {
     currentCounter++
     counterNumber.innerText = currentCounter
