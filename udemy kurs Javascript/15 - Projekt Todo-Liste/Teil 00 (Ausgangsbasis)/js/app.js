@@ -2,13 +2,24 @@
 
 const KEY_ENTER = 13
 
+/*
+<li>
+    <div class="view">
+        <input class="toggle" type="checkbox">
+        <label>Buy a unicorn</label>
+        <button class="destroy"></button>
+    </div>
+</li>
+    */
+
 document.addEventListener("DOMContentLoaded", () => {
     const newTodoElement = document.querySelector(".new-todo")
     const todoListElement = document.querySelector(".todo-list")
 
 
     newTodoElement.addEventListener("keypress", (event) => {
-        if (event.witch === KEY_ENTER && newTodoElement.value !== "") {
+        if (event.which === KEY_ENTER && newTodoElement.value !== "") {
+
             const newButtonElement = document.createElement("button")
             newButtonElement.classList.add("destroy")
 
@@ -16,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             newLabelElement.appendChild(
                 document.createTextNode(newTodoElement.value)
             )
+
             const newInputCheckbox = document.createElement("input")
             newInputCheckbox.type = "checkbox"
             newInputCheckbox.classList.add("toggle")
@@ -32,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
             todoListElement.prepend(newLiElement)
 
             newTodoElement.value = ""
-
         }
     })
 });
