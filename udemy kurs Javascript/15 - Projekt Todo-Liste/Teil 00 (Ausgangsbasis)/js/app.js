@@ -16,6 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const newTodoElement = document.querySelector(".new-todo")
     const todoListElement = document.querySelector(".todo-list")
 
+    const addCallbacksForLi = (liElement) => {
+        const checkboxElement = liElement.querySelector(".toggle")
+        const destroyButtonElement = liElement.querySelector(".destroy")
+
+        checkboxElement.addEventListener("change", () => {
+            if (checkboxElement.checked) {
+                liElement.classList.add("completed")
+            } else {
+                liElement.classList.remove("completed")
+            }
+        })
+
+        destroyButtonElement.addEventListener("click", () => {
+            liElement.remove()
+        })
+    }
+
 
     newTodoElement.addEventListener("keypress", (event) => {
         if (event.which === KEY_ENTER && newTodoElement.value !== "") {
@@ -40,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const newLiElement = document.createElement("li")
             newLiElement.appendChild(newDivElement)
+
+            addCallbacksForLi(newLiElement)
 
             todoListElement.prepend(newLiElement)
 
