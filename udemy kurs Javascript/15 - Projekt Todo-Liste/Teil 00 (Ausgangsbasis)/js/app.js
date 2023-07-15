@@ -15,6 +15,36 @@ const KEY_ENTER = 13
 document.addEventListener("DOMContentLoaded", () => {
     const newTodoElement = document.querySelector(".new-todo")
     const todoListElement = document.querySelector(".todo-list")
+    const footerElement = document.querySelector(".footer")
+    const todoCountElement = document.querySelector(".todo-count strong")
+    const clearCompletedElement = document.querySelector(".clear-completed")
+
+    const refreshFooter = () => {
+        if (todoListElement.children.length === 0) {
+            footerElement.style.display = "none"
+        } else {
+            footerElement.style.display = ""
+        }
+
+        /*
+        let todoCounter = 0
+        for (const todoListItem of todoListElement.children) {
+            if (!todoListItem.classList.contains("completed")) {
+                todoCounter++
+            }
+        }
+        */
+        let todoCounter = todoListElement.querySelectorAll("li:not(.completed)").length
+        todoCountElement.innerText = todoCounter
+
+        let completedCounter = todoListElement.querySelectorAll("li.completed").length
+        if (completedCounter === 0) {
+            clearCompletedElement.style.display = "none"
+        } else {
+            clearCompletedElement.style.display = ""
+        }
+    }
+    refreshFooter()
 
     const addCallbacksForLi = (liElement) => {
         const checkboxElement = liElement.querySelector(".toggle")
@@ -26,10 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 liElement.classList.remove("completed")
             }
+
+            refreshFooter()
         })
 
         destroyButtonElement.addEventListener("click", () => {
             liElement.remove()
+
+            refreshFooter()
         })
     }
 
@@ -63,6 +97,18 @@ document.addEventListener("DOMContentLoaded", () => {
             todoListElement.prepend(newLiElement)
 
             newTodoElement.value = ""
+
+            refreshFooter()
         }
+    })
+
+
+    clearCompletedElement.addEventListener("click", (event) => {
+        const completedLiElements = todoListElement.querySelectorAll("li.completed")
+        for (const completedLiElement of completedLiElements) {
+            completedLiElement.remove()
+        }
+
+        refreshFooter()
     })
 });
