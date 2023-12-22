@@ -3,7 +3,7 @@
 // Diese Übung besteht aus 2 Aufgaben - Scrolle also auf jeden Fall
 // herunter!
 
-// Aufgabe 1
+// Aufgabe  1
 //
 // Wir sollen eine Todo-Verwaltung entwickeln, mit der ausstehende Aufgaben für
 // ein Team von Programmierern verwaltet werden können.
@@ -39,16 +39,16 @@
 
 const todoModule = {
   todos: [
-    {title: "HTML lernen", done: true},
-    {title: "JavaScript lernen", done: false},
-    {title: "Node.JS lernen", done: false}
+    { title: "HTML lernen", done: true },
+    { title: "JavaScript lernen", done: false },
+    { title: "Node.JS lernen", done: false }
   ],
 
   /**
    * @param {string} title 
    */
   addTodo(title) {
-    for(const todo of this.todos) {
+    for (const todo of this.todos) {
       if (todo.title === title) {
         return
       }
@@ -61,11 +61,11 @@ const todoModule = {
     this.emit("add", newTodo)
   },
 
- /**
-  * @param {string} title 
-  */
+  /**
+   * @param {string} title 
+   */
   completeTodo(title) {
-    for(const todo of this.todos) {
+    for (const todo of this.todos) {
       if (todo.title === title && todo.done === false) {
         todo.done = true
         this.emit("complete", todo)
@@ -78,7 +78,7 @@ const todoModule = {
    */
   getTodoCount() {
     let todoCount = 0
-    for(const todo of this.todos) {
+    for (const todo of this.todos) {
       if (todo.done === false) {
         todoCount++
       }
@@ -98,7 +98,7 @@ const todoModule = {
    */
   emit(eventName, param) {
     if (eventName in this.events) {
-      for(const f of this.events[eventName]) {
+      for (const f of this.events[eventName]) {
         f(param)
       }
     }
